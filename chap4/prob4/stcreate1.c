@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include "student.h"
+#include <stdlib.h>
 
 int main(int argc, char* argv[])
 {
 	struct stdent rec;
 
-	FILE fp;
+	FILE *fp;
 
 	if (argc != 2){
 		fprintf(stderr, "How to use: %s FileName\n", argv[0]);
